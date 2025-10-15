@@ -1,0 +1,23 @@
+
+# Prefix
+
+w1 = "abcdeeee"
+w2 = "abcyeeee"
+w3 = "abcrr"
+
+L= [
+    w1,w2,w3
+]
+
+length = min([len(k) for k in L])
+for i in range(
+    length
+):
+    W = ''.join([w[i] for w in L])
+    if sum([ord(W[j]) for j in range(len(W))]) /len(L) != ord(W[0]):
+        break
+    
+
+print(
+    w1[:i]
+)
