@@ -33,3 +33,5 @@ print(
 
     "H".isupper()
 )
+
+#str.isdigit("5")
